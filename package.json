@@ -1,18 +1,18 @@
 {
-  "name": "web-check",
+  "name": "check-yo-site",
   "version": "1.0.0",
   "private": false,
-  "description": "All-in-one OSINT tool for analyzing any website",
-  "repository": "github:lissy93/web-check",
-  "homepage": "https://web-check.as93.net",
+  "description": "OSINT tool for analyzing websites",
+  "repository": "github:kmal808/check-yo-site",
+  "homepage": "https://check-yo-site.netlify.com",
   "license": "MIT",
   "author": {
-    "name": "Alicia Sykes",
-    "email": "alicia@omg.lol"
+    "name": "k mal",
+    "email": "howzit@wut.rip"
   },
   "funding": {
     "type": "github",
-    "url": "https://github.com/sponsors/Lissy93"
+    "url": "https://github.com/sponsors/kmal808"
   },
   "scripts": {
     "dev": "netlify dev",
