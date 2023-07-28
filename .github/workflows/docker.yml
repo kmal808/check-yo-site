@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - master
+      - main
     tags:
       - '*'
     paths:
@@ -14,8 +14,8 @@ on:
       - Dockerfile
 
 env:
-  IMAGE_NAME: web-check
-  DOCKER_USER: lissy93
+  IMAGE_NAME: check-yo-site
+  DOCKER_USER: kmal808
   GHCR_REGISTRY: ghcr.io
   DOCKERHUB_REGISTRY: docker.io
 
@@ -33,7 +33,7 @@ jobs:
       - name: Compute tags
         id: compute-tags
         run: |
-          if [[ "${{ github.ref }}" == "refs/heads/master" ]]; then
+          if [[ "${{ github.ref }}" == "refs/heads/main" ]]; then
             echo "GHCR_TAG=${GHCR_REGISTRY}/${DOCKER_USER}/${IMAGE_NAME}:latest" >> $GITHUB_ENV
             echo "DOCKERHUB_TAG=${DOCKERHUB_REGISTRY}/${DOCKER_USER}/${IMAGE_NAME}:latest" >> $GITHUB_ENV
           else
