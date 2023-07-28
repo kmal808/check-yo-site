@@ -1,8 +1,8 @@
 version: '3.9'
 services:
-  web-check:
-    container_name: Web-Check
-    image: lissy93/web-check
+  check-yo-site:
+    container_name: check-yo-site
+    image: kmal808/check-yo-site
     ports:
       - 8888:8888
     restart: unless-stopped
